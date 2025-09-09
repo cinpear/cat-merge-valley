@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn0yc5eu7l454"]
+
+[ext_resource type="Script" path="res://button_10.gd" id="1_6t1k2"]
+[ext_resource type="Texture2D" uid="uid://cf0xb7irnc317" path="res://images/button.png" id="2_gorix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e321i"]
+size = Vector2(330, 330)
+
+[node name="button-10" type="Node2D"]
+script = ExtResource("1_6t1k2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_gorix")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_e321i")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
