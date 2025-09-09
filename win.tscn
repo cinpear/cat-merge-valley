@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxm625i60co3g"]
+
+[ext_resource type="Texture2D" uid="uid://b3qxv0w8txyws" path="res://images/win.png" id="1_u7rxp"]
+
+[node name="win" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_u7rxp")

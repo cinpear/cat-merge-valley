@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://m0i43bkee1fk"]
+
+[ext_resource type="Texture2D" uid="uid://to8k0wabg6t0" path="res://images/start-bg.png" id="1_ad6p2"]
+[ext_resource type="Texture2D" uid="uid://vti2jqdd1xp5" path="res://images/start-bg-ref.png" id="2_rrvmd"]
+[ext_resource type="PackedScene" uid="uid://gh8s2ddldw60" path="res://start_button.tscn" id="3_p0l7x"]
+
+[node name="start" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ad6p2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_rrvmd")
+
+[node name="start-button" parent="." instance=ExtResource("3_p0l7x")]
+position = Vector2(0, 421)

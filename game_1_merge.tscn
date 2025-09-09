@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://1uyg8ufaktpe"]
+
+[ext_resource type="Texture2D" uid="uid://b2v1p1o33kf1p" path="res://images/merge-bg.png" id="1_nvj73"]
+[ext_resource type="Texture2D" uid="uid://dhj25pxyko0np" path="res://images/cat-2.png" id="2_0xnkr"]
+[ext_resource type="Texture2D" uid="uid://bbk2oscegfu6d" path="res://images/moon-2.png" id="3_b6fpj"]
+[ext_resource type="Texture2D" uid="uid://o76fb7yksgxh" path="res://images/star-2.png" id="4_lqb0d"]
+[ext_resource type="PackedScene" uid="uid://1p2spgisdvkd" path="res://button_2.tscn" id="5_6qr7c"]
+
+[node name="game-1-merge" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nvj73")
+
+[node name="Cat-2" type="Sprite2D" parent="."]
+position = Vector2(-814, -415)
+texture = ExtResource("2_0xnkr")
+
+[node name="Moon-2" type="Sprite2D" parent="."]
+position = Vector2(-814, -247)
+texture = ExtResource("3_b6fpj")
+
+[node name="Star-2" type="Sprite2D" parent="."]
+position = Vector2(-814, -79)
+texture = ExtResource("4_lqb0d")
+
+[node name="button-2" parent="." instance=ExtResource("5_6qr7c")]
+position = Vector2(0, 363)

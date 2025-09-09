@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://df6324wy1atys"]
+
+[ext_resource type="Texture2D" uid="uid://b2v1p1o33kf1p" path="res://images/merge-bg.png" id="1_sr40v"]
+[ext_resource type="Texture2D" uid="uid://drcp3eacsardr" path="res://images/cat-5.png" id="2_1bxu6"]
+[ext_resource type="PackedScene" uid="uid://dsrdxtd1pyxea" path="res://button_8.tscn" id="3_fc372"]
+
+[node name="game-4-merge" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sr40v")
+
+[node name="Cat-5" type="Sprite2D" parent="."]
+position = Vector2(-814, -415)
+texture = ExtResource("2_1bxu6")
+
+[node name="Cat-6" type="Sprite2D" parent="."]
+position = Vector2(-814, -247)
+texture = ExtResource("2_1bxu6")
+
+[node name="Cat-7" type="Sprite2D" parent="."]
+position = Vector2(-814, -79)
+texture = ExtResource("2_1bxu6")
+
+[node name="button-8" parent="." instance=ExtResource("3_fc372")]
+position = Vector2(0, 363)

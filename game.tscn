@@ -1,0 +1,252 @@
+[gd_scene load_steps=15 format=3 uid="uid://bp3f3x4qpf01a"]
+
+[ext_resource type="Texture2D" uid="uid://b2v1p1o33kf1p" path="res://images/merge-bg.png" id="1_3srq4"]
+[ext_resource type="Texture2D" uid="uid://ervwq1qliuxe" path="res://images/merge-bg-ref.png" id="2_tl7pa"]
+[ext_resource type="Texture2D" uid="uid://cf0xb7irnc317" path="res://images/button.png" id="2_tp324"]
+[ext_resource type="PackedScene" uid="uid://ccc7d6o2tdkdp" path="res://item.tscn" id="5_afs4g"]
+[ext_resource type="PackedScene" uid="uid://co4k07pcubi2h" path="res://sprout_1.tscn" id="6_q0137"]
+[ext_resource type="PackedScene" uid="uid://cbodukquusel8" path="res://sprout_2.tscn" id="7_8wrxt"]
+[ext_resource type="PackedScene" uid="uid://cq8lm5meoqg3f" path="res://sprout_3.tscn" id="8_6r72b"]
+[ext_resource type="PackedScene" uid="uid://3v5s6ekxgqol" path="res://crescent_1.tscn" id="9_xf0vb"]
+[ext_resource type="PackedScene" uid="uid://b5n8tv328lmwh" path="res://crescent_3.tscn" id="10_5w1da"]
+[ext_resource type="PackedScene" uid="uid://c3qr7fntgrt44" path="res://crescent_2.tscn" id="11_vh81i"]
+[ext_resource type="PackedScene" uid="uid://bnspyamtkcxdn" path="res://spark_1.tscn" id="12_v1at1"]
+[ext_resource type="PackedScene" uid="uid://b3hp7c2fwtbj7" path="res://spark_3.tscn" id="13_7j8gs"]
+[ext_resource type="PackedScene" uid="uid://tpdylnlym0i" path="res://spark_2.tscn" id="14_cg4un"]
+[ext_resource type="PackedScene" uid="uid://bnekxmaxqgiqy" path="res://button.tscn" id="15_b7xbv"]
+
+[node name="game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3srq4")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 362)
+texture = ExtResource("2_tp324")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("2_tl7pa")
+
+[node name="item0-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -415)
+collision_layer = 2
+collision_mask = 2
+script = null
+
+[node name="item1-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -247)
+collision_layer = 16
+collision_mask = 16
+script = null
+
+[node name="item2-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -79)
+collision_layer = 128
+collision_mask = 128
+script = null
+
+[node name="item3-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, 89)
+script = null
+
+[node name="item4-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, 257)
+script = null
+
+[node name="item0-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -415)
+collision_layer = 4
+collision_mask = 4
+script = null
+
+[node name="item1-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -247)
+collision_layer = 32
+collision_mask = 32
+script = null
+
+[node name="item2-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -79)
+collision_layer = 256
+collision_mask = 256
+script = null
+
+[node name="item3-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, 89)
+script = null
+
+[node name="item4-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, 257)
+script = null
+
+[node name="item0-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -415)
+collision_layer = 8
+collision_mask = 8
+script = null
+
+[node name="item1-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -247)
+collision_layer = 64
+collision_mask = 64
+script = null
+
+[node name="item2-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -79)
+collision_layer = 512
+collision_mask = 512
+script = null
+
+[node name="item3-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, 89)
+script = null
+
+[node name="item4-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, 257)
+script = null
+
+[node name="item0-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -415)
+script = null
+
+[node name="item1-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -247)
+script = null
+
+[node name="item2-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -79)
+script = null
+
+[node name="item3-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, 89)
+script = null
+
+[node name="item0-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -415)
+script = null
+
+[node name="item1-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -247)
+script = null
+
+[node name="item2-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -79)
+script = null
+
+[node name="item3-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, 89)
+script = null
+
+[node name="item0-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -415)
+script = null
+
+[node name="item1-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -247)
+script = null
+
+[node name="item2-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -79)
+script = null
+
+[node name="item3-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, 89)
+script = null
+
+[node name="item0-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -415)
+script = null
+
+[node name="item1-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -247)
+script = null
+
+[node name="item2-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -79)
+script = null
+
+[node name="item3-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, 89)
+script = null
+
+[node name="item4-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, 257)
+script = null
+
+[node name="item0-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -415)
+script = null
+
+[node name="item1-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -247)
+script = null
+
+[node name="item2-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -79)
+script = null
+
+[node name="item3-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, 89)
+script = null
+
+[node name="item4-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, 257)
+script = null
+
+[node name="item0-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -415)
+script = null
+
+[node name="item1-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -247)
+script = null
+
+[node name="item2-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -79)
+script = null
+
+[node name="item3-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, 89)
+script = null
+
+[node name="item4-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, 257)
+script = null
+
+[node name="sprout-1" parent="." instance=ExtResource("6_q0137")]
+position = Vector2(-607, -247)
+
+[node name="sprout-2" parent="." instance=ExtResource("7_8wrxt")]
+position = Vector2(-409, -79)
+
+[node name="sprout-3" parent="." instance=ExtResource("7_8wrxt")]
+position = Vector2(-409, -79)
+
+[node name="sprout-4" parent="." instance=ExtResource("8_6r72b")]
+position = Vector2(-1, -247)
+
+[node name="crescent-1" parent="." instance=ExtResource("9_xf0vb")]
+position = Vector2(-204, -79)
+
+[node name="crescent-3" parent="." instance=ExtResource("10_5w1da")]
+position = Vector2(406, -79)
+
+[node name="crescent-2" parent="." instance=ExtResource("11_vh81i")]
+position = Vector2(-1, 90)
+
+[node name="spark-1" parent="." instance=ExtResource("12_v1at1")]
+position = Vector2(-610, 89)
+
+[node name="spark-3" parent="." instance=ExtResource("13_7j8gs")]
+position = Vector2(609, 257)
+
+[node name="spark-2" parent="." instance=ExtResource("14_cg4un")]
+position = Vector2(406, -414)
+
+[node name="button" parent="." instance=ExtResource("15_b7xbv")]
+position = Vector2(0, 363)

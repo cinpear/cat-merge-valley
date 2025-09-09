@@ -1,0 +1,164 @@
+[gd_scene load_steps=7 format=3 uid="uid://bp3f3x4qpf01a"]
+
+[ext_resource type="Texture2D" uid="uid://b2v1p1o33kf1p" path="res://images/merge-bg.png" id="1_3srq4"]
+[ext_resource type="Script" path="res://game.gd" id="1_yo57x"]
+[ext_resource type="Texture2D" uid="uid://ervwq1qliuxe" path="res://images/merge-bg-ref.png" id="2_tl7pa"]
+[ext_resource type="Texture2D" uid="uid://cf0xb7irnc317" path="res://images/button.png" id="2_tp324"]
+[ext_resource type="PackedScene" uid="uid://ccc7d6o2tdkdp" path="res://item.tscn" id="5_afs4g"]
+[ext_resource type="Texture2D" uid="uid://dn6aaacsjutgf" path="res://images/cat-1.png" id="6_jpg1f"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_yo57x")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3srq4")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 362)
+texture = ExtResource("2_tp324")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_tl7pa")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -165.0
+offset_top = 201.0
+offset_right = 163.0
+offset_bottom = 524.0
+texture_normal = ExtResource("2_tp324")
+
+[node name="item0-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -415)
+
+[node name="item1-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -247)
+
+[node name="item2-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, -79)
+
+[node name="item3-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, 89)
+
+[node name="item4-0" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-814, 257)
+
+[node name="item0-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -415)
+
+[node name="item1-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -247)
+
+[node name="item2-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, -79)
+
+[node name="item3-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, 89)
+
+[node name="item4-1" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-610, 257)
+
+[node name="item0-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -415)
+
+[node name="item1-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -247)
+
+[node name="item2-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, -79)
+
+[node name="item3-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, 89)
+
+[node name="item4-2" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-407, 257)
+
+[node name="item0-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -415)
+
+[node name="item1-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -247)
+
+[node name="item2-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, -79)
+
+[node name="item3-3" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-204, 89)
+
+[node name="item0-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -415)
+
+[node name="item1-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -247)
+
+[node name="item2-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, -79)
+
+[node name="item3-4" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(-1, 89)
+
+[node name="item0-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -415)
+
+[node name="item1-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -247)
+
+[node name="item2-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, -79)
+
+[node name="item3-5" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(202, 89)
+
+[node name="item0-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -415)
+
+[node name="item1-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -247)
+
+[node name="item2-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, -79)
+
+[node name="item3-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, 89)
+
+[node name="item4-6" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(406, 257)
+
+[node name="item0-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -415)
+
+[node name="item1-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -247)
+
+[node name="item2-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, -79)
+
+[node name="item3-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, 89)
+
+[node name="item4-7" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(608, 257)
+
+[node name="item0-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -415)
+
+[node name="item1-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -247)
+
+[node name="item2-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, -79)
+
+[node name="item3-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, 89)
+
+[node name="item4-8" parent="." instance=ExtResource("5_afs4g")]
+position = Vector2(812, 257)
+
+[node name="Cat-1" type="Sprite2D" parent="."]
+position = Vector2(-912, -338)
+texture = ExtResource("6_jpg1f")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

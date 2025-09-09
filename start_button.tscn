@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://gh8s2ddldw60"]
+
+[ext_resource type="Texture2D" uid="uid://cq56xo81lfld8" path="res://images/start-button.png" id="1_23ml2"]
+[ext_resource type="Script" path="res://start_button.gd" id="1_spwvg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sw2y1"]
+size = Vector2(200, 190)
+
+[node name="start-button" type="Node2D"]
+script = ExtResource("1_spwvg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_sw2y1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_23ml2")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

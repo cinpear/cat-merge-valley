@@ -1,0 +1,213 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjekxd6s80a6r"]
+
+[ext_resource type="Texture2D" uid="uid://b2v1p1o33kf1p" path="res://images/merge-bg.png" id="1_quave"]
+[ext_resource type="PackedScene" uid="uid://ccc7d6o2tdkdp" path="res://item.tscn" id="2_s72hi"]
+[ext_resource type="PackedScene" uid="uid://skf0gd4c3tc4" path="res://fullmoon_1.tscn" id="3_0kepi"]
+[ext_resource type="PackedScene" uid="uid://qiqya1cu0y1d" path="res://hat_1.tscn" id="4_kidno"]
+[ext_resource type="PackedScene" uid="uid://b6t2ogd37ndnw" path="res://catpear_1.tscn" id="5_f1vre"]
+[ext_resource type="PackedScene" uid="uid://c8dylxpgb5u1e" path="res://button_9.tscn" id="6_8hqw8"]
+
+[node name="game-5" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_quave")
+
+[node name="item0-0" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-814, -415)
+collision_layer = 2
+collision_mask = 2
+script = null
+
+[node name="item1-0" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-814, -247)
+collision_layer = 16
+collision_mask = 16
+script = null
+
+[node name="item2-0" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-814, -79)
+collision_layer = 128
+collision_mask = 128
+script = null
+
+[node name="item3-0" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-814, 89)
+script = null
+
+[node name="item4-0" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-814, 257)
+script = null
+
+[node name="item0-1" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-610, -415)
+collision_layer = 4
+collision_mask = 4
+script = null
+
+[node name="item1-1" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-610, -247)
+collision_layer = 32
+collision_mask = 32
+script = null
+
+[node name="item2-1" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-610, -79)
+collision_layer = 256
+collision_mask = 256
+script = null
+
+[node name="item3-1" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-610, 89)
+script = null
+
+[node name="item4-1" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-610, 257)
+script = null
+
+[node name="item0-2" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-407, -415)
+collision_layer = 8
+collision_mask = 8
+script = null
+
+[node name="item1-2" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-407, -247)
+collision_layer = 64
+collision_mask = 64
+script = null
+
+[node name="item2-2" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-407, -79)
+collision_layer = 512
+collision_mask = 512
+script = null
+
+[node name="item3-2" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-407, 89)
+script = null
+
+[node name="item4-2" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-407, 257)
+script = null
+
+[node name="item0-3" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-204, -415)
+script = null
+
+[node name="item1-3" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-204, -247)
+script = null
+
+[node name="item2-3" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-204, -79)
+script = null
+
+[node name="item3-3" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-204, 89)
+script = null
+
+[node name="item0-4" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-1, -415)
+script = null
+
+[node name="item1-4" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-1, -247)
+script = null
+
+[node name="item2-4" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-1, -79)
+script = null
+
+[node name="item3-4" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(-1, 89)
+script = null
+
+[node name="item0-5" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(202, -415)
+script = null
+
+[node name="item1-5" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(202, -247)
+script = null
+
+[node name="item2-5" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(202, -79)
+script = null
+
+[node name="item3-5" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(202, 89)
+script = null
+
+[node name="item0-6" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(406, -415)
+script = null
+
+[node name="item1-6" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(406, -247)
+script = null
+
+[node name="item2-6" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(406, -79)
+script = null
+
+[node name="item3-6" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(406, 89)
+script = null
+
+[node name="item4-6" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(406, 257)
+script = null
+
+[node name="item0-7" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(608, -415)
+script = null
+
+[node name="item1-7" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(608, -247)
+script = null
+
+[node name="item2-7" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(608, -79)
+script = null
+
+[node name="item3-7" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(608, 89)
+script = null
+
+[node name="item4-7" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(608, 257)
+script = null
+
+[node name="item0-8" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(812, -415)
+script = null
+
+[node name="item1-8" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(812, -247)
+script = null
+
+[node name="item2-8" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(812, -79)
+script = null
+
+[node name="item3-8" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(812, 89)
+script = null
+
+[node name="item4-8" parent="." instance=ExtResource("2_s72hi")]
+position = Vector2(812, 257)
+script = null
+
+[node name="fullmoon-1" parent="." instance=ExtResource("3_0kepi")]
+position = Vector2(-204, 89)
+
+[node name="hat-1" parent="." instance=ExtResource("4_kidno")]
+position = Vector2(-814, -79)
+
+[node name="catpear-1" parent="." instance=ExtResource("5_f1vre")]
+position = Vector2(406, -247)
+
+[node name="button-9" parent="." instance=ExtResource("6_8hqw8")]
+position = Vector2(0, 363)
